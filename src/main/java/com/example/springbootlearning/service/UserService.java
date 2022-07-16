@@ -30,10 +30,7 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        System.out.println(users.hashCode());
-        var copyUsers = List.copyOf(users);
-        System.out.println(copyUsers.hashCode());
-        return copyUsers;
+        return List.copyOf(users);
     }
 
     public void save(User user) {
